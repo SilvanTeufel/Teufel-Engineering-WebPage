@@ -61,12 +61,12 @@ const HomePage: React.FC = () => {
         <main className="relative z-10 overflow-y-auto h-screen snap-y snap-mandatory">
         
         {/* Hero Section */}
-        <section id="home" className="h-screen flex flex-col items-center justify-center p-8 text-center snap-start relative">
-          <div className="max-w-4xl mx-auto bg-black/50 backdrop-blur-md p-10 rounded-xl border border-cyan-400/20 shadow-xl shadow-cyan-500/10">
-            <img src="https://i.ibb.co/7QrW6s7/profile-sketch.jpg" alt="A sketch of Silvan Teufel" className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-cyan-400/50 object-cover" />
-            <h1 className="text-5xl md:text-7xl font-bold text-cyan-300 tracking-widest">SILVAN TEUFEL</h1>
-            <p className="text-xl md:text-2xl mt-4 text-gray-300">Freelancer for Software, Hardware, Games & Simulations</p>
-            <h2 className="text-2xl mt-4 text-cyan-400 font-semibold tracking-wider">Teufel-Engineering</h2>
+        <section id="home" className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 text-center snap-start relative">
+          <div className="w-full max-w-4xl mx-auto bg-black/50 backdrop-blur-md p-6 md:p-10 rounded-xl border border-cyan-400/20 shadow-xl shadow-cyan-500/10">
+            <img src="https://i.ibb.co/7QrW6s7/profile-sketch.jpg" alt="A sketch of Silvan Teufel" className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-cyan-400/50 object-cover" />
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-cyan-300 tracking-widest">SILVAN TEUFEL</h1>
+            <p className="text-lg sm:text-xl md:text-2xl mt-4 text-gray-300">Freelancer for Software, Hardware, Games & Simulations</p>
+            <h2 className="text-xl md:text-2xl mt-4 text-cyan-400 font-semibold tracking-wider">Teufel-Engineering</h2>
             <div className="mt-8 text-sm text-cyan-200/50 animate-pulse">
                 Use Arrow Keys & Space to play the game in the background.
             </div>
@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
 
         {/* Experience Section */}
         <Section title="Experience" id="experience">
-            <div className="space-y-8 relative border-l-2 border-cyan-400/20 pl-8">
+            <div className="space-y-8 relative border-l-2 border-cyan-400/20 pl-6 sm:pl-8">
                 <ExperienceItem
                     date="01/2020 - My own Products"
                     title="Plugin/Game C++ Development for the Unreal Marketplace"
@@ -180,7 +180,7 @@ const HomePage: React.FC = () => {
 
         {/* Academics Section */}
         <Section title="Academics" id="academics">
-            <div className="space-y-8 relative border-l-2 border-cyan-400/20 pl-8">
+            <div className="space-y-8 relative border-l-2 border-cyan-400/20 pl-6 sm:pl-8">
                  <ExperienceItem
                     date="05/2017 - 12/2017"
                     title="Master Thesis - Study of the Characteristics of Current Sensors"

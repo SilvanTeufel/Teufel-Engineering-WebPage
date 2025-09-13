@@ -39,19 +39,21 @@ const Header: React.FC = () => {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-20 flex justify-center p-4">
-            <nav className="bg-black/50 backdrop-blur-md p-2 rounded-xl border border-cyan-400/20 shadow-lg shadow-cyan-500/10">
-                <ul className="flex items-center gap-2 md:gap-4">
-                    {navItems.map(item => (
-                         <li key={item.id}>
-                            <a 
-                                href={`#${item.id}`}
-                                className={`${linkClasses} ${activeSection === item.id ? activeLinkClasses : inactiveLinkClasses} pointer-events-none`}
-                            >
-                                {item.title}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+            <nav className="bg-black/50 backdrop-blur-md p-2 rounded-xl border border-cyan-400/20 shadow-lg shadow-cyan-500/10 w-full max-w-max">
+                <div className="overflow-x-auto">
+                    <ul className="flex items-center gap-2 md:gap-4">
+                        {navItems.map(item => (
+                             <li key={item.id}>
+                                <a 
+                                    href={`#${item.id}`}
+                                    className={`${linkClasses} ${activeSection === item.id ? activeLinkClasses : inactiveLinkClasses} pointer-events-none`}
+                                >
+                                    {item.title}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
         </header>
     );
